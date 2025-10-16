@@ -1024,12 +1024,12 @@ fn get_api_server_(api: String, custom: String) -> String {
             return format!("http://{}", s);
         }
     }
-    "106.55.22.177".to_owned()
+    "http://106.55.22.177:21114".to_owned()
 }
 
 #[inline]
 pub fn is_public(url: &str) -> bool {
-    url.contains("106.55.22.177")
+    url.contains("rustdesk.com")
 }
 
 pub fn get_udp_punch_enabled() -> bool {
